@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Details</title>
+    <style>
+
+   body{}
+
+
+    .p {
+        border:1px solid black;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+    }
+    
+    
+    
+
+    .labe{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.in {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    
+}
+
+.but {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #f34b0e;
+    color: rgb(241, 241, 242);
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.but:hover {
+    background-color: #a06945;
+}
+
+.option-list{
+    width:93%;
+    height:50px;
+    border-radius:10px;
+}
+    </style>
+</head>
+<body>
+    <h1>Product Details</h1>
+   <div id="p" > 
+        <form action="productServlet" method="post">
+             <label class="labe" for="Amount">Type of Material:</label>
+               
+   <select id="userOptions" class="option-list" name="material">
+ 
+ 
+    <option value="Plastic Bottle">Plastic Bottle</option>
+    <option value="Bottle caps">Bottle caps</option>
+    <option value="Jugs & Detergent Bottles">Jugs & Detergent Bottles</option>
+    <option value="Plumbing Pipes">Plumbing Pipes</option>
+    <option value="Grocery bags">Grocery bags</option>
+    
+    
+   </select>
+
+             <br>
+             <br>
+
+             <label class="labe" for="Amount">Weight :</label>
+             <input class="in" type="text" id="Amount" name="weight" required>
+             <br>
+             <br>
+             <label class="labe" for="price">Price:</label>
+             <input class="in" type="text" id="price" name="price" required>
+             <h3>Seller Information</h3>
+        
+            <label class="labe" for="name">Name:</label>
+            <input class="in" type="text" id="name" name="name" required>
+            <br>
+            <br>
+            <label class="labe" for="contact">Contact:</label>
+            <input class="in" type="text" id="contact" name="contact" required>
+            <br>
+            <button  class="but" onclick="su()">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

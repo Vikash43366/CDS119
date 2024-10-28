@@ -1,0 +1,43 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Recycle Plastic</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+       
+     
+        <div class="topnav" id="myTopnav">
+          <a href="index1.jsp" >Home</a>
+          <a href="contact.html" class="actives">Contact</a>
+          
+          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        
+    </div>
+    <section class="contact-form">
+        <h2>Contact For Query</h2>
+        <form action ="contactServlet" method ="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"  required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="mail" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required placeholder="Enter Your Query"></textarea>
+            
+            <button type="submit" class="sss" onclick="su()">Send Message</button>
+        </form>
+    </section>
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
